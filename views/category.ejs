@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <% const capCategory = category.charAt(0).toUpperCase() + category.slice(1);
+    %>
+    <title><%= restaurant.name %> - <%= capCategory %></title>
+    <link rel="stylesheet" href="/cat.css" />
+     <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="category">
+    <!-- nav  partial -->
+    <%- include('./partials/nav') %>
+
+    <h1><%= capCategory %></h1>
+
+    <% if (menuItems.length >0) { %> <% menuItems.forEach(item => { %>
+    <p>
+      <strong><%= item.name %></strong>
+      - <%= item.priceFormatted %> - ⭐️ <%= item.rating %>/5
+      <br />
+      <em><%= item.details %></em>
+    </p>
+    <% }) %> <% } else { %>
+    <p>No items found in this category.<a href="/menu"> Back to menu</a></p>
+    <% } %>
+  </body>
+</html>

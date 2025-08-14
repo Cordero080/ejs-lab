@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Future Z Italic";
+  src: url('./fonts/Future Z Italic.otf') format('opentype');
+  font-weight: normal;
+font-style: normal;
+}
+
+
+*{
+  box-sizing: border-box;
+
+}
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Future Z Italic';
+  line-height: 1.5;
+  padding: 16px;
+}
+h1{
+  font-size: clamp(1.25rem, 1,2vw + .9rem, 1.5rem);
+}
+/* TABLETS */
+@media (min-width: 768px) {
+  body {
+    padding: 24px;
+  }
+}
+/* DESKTOPS */
+@media (min-width: 1024px) { 
+  body { 
+    padding: 32px; 
+  } 
+  }
+
+nav {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(221, 210, 91, 0.85);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  text-align: center;
+  padding: 1em 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(120deg, #39ff14 0%, #00ffc8 40%, #ff00c8 100%);
+  opacity: 0.45;
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 40vh;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(300deg, #ff00c8 0%, #00ffc8 60%, #39ff14 100%);
+  opacity: 0.45;
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 0 100%);
+}

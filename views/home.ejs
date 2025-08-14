@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/home.css" />
+    <link rel="stylesheet" href="/styles.css" />
+
+    <title><%= restaurant.name %></title>
+  </head>
+  <body class="home-page">
+    <%- include('./partials/nav') %>
+    <h1 class="restaurant">The Green Byte Bistro</h1>
+
+    <!-- <h2>
+      
+    </h2> -->
+    <div class="info">
+      <p class="more-info"><%= restaurant.address %></p>
+      <p class="more-info"><%= restaurant.phone %></p>
+
+      <% if(restaurant.isOpen) { %>
+      <p class="more-info">Hell yeah, we're open!</p>
+      <% }else{ %>
+      <p class="more-info">
+        We do beseech<br />
+        your pardon.<br />The doors stand<br />
+        not ope..
+      </p>
+      <% } %>
+    </div>
+  </body>
+</html>

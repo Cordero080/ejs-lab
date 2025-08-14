@@ -1,0 +1,61 @@
+/* Top Left Diagonal Gradient Shape */
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Honk&family=Monoton&family=Poiret+One&family=Splash&family=Tektur:wght@400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+
+@font-face {
+  font-family: "Future Z";
+  src: url('./fonts/Future Z.otf') format('opentype');
+  font-weight: normal;
+font-style: normal;
+}
+@font-face {
+  font-family: "Future Z Italic";
+  src: url('./fonts/Future Z Italic.otf') format('opentype');
+  font-weight: normal;
+font-style: normal;
+}
+
+
+
+body {
+  font-family: 'Future Z Italic', sans-serif;
+  /* Green radial gradient background image */
+  background: radial-gradient(circle at 50% 50%, #39ff14 0%, #0a3c0a 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  font-size: 1.8em;
+  min-height: 100vh;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 40vh;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(300deg, #ff00c8 0%, #00ffc8 60%, #39ff14 100%);
+  opacity: 0.45;
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 0 100%);
+}
+
+h1 {
+  margin-top: 6em;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    margin-top: 7.5em;
+  }
+}
