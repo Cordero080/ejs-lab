@@ -17,15 +17,15 @@
     </h2> -->
     <div class="info">
       <p class="more-info"><%= restaurant.address %></p>
-      <p class="more-info"><%= restaurant.phone %></p>
+      <p class="more-info" id="phone"><%= restaurant.phone %></p>
 
       <% if(restaurant.isOpen) { %>
       <p class="more-info">Hell yeah, we're open!</p>
       <% }else{ %>
-      <p class="more-info">
+      <p class="more-info" id="status">
         We do beseech<br />
         your pardon.<br />The doors stand<br />
-        not ope..
+        not ope...
       </p>
       <% } %>
     </div>

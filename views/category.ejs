@@ -13,12 +13,12 @@
     <!-- nav  partial -->
     <%- include('./partials/nav') %>
 
-    <h1><%= capCategory %></h1>
+    <h1 class="category-title"><%= capCategory %></h1>
 
     <% if (menuItems.length >0) { %> <% menuItems.forEach(item => { %>
     <p>
-      <strong><%= item.name %></strong>
-      - <%= item.priceFormatted %> - ⭐️ <%= item.rating %>/5
+      <strong class="itemName"><%= item.name %></strong>
+      - <span class="price"><%= item.priceFormatted %></span> - ⭐️ <span class ="ratings"><%= item.rating %>/5 </span>
       <br />
       <em><%= item.details %></em>
     </p>

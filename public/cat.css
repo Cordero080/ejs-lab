@@ -48,3 +48,39 @@ nav {
   text-align: center;
   padding: 1em 0;
 }
+.price {
+  padding: 2px 8px;
+  border-radius: 200px;
+  
+  color: rgb(200, 64, 82);
+  font-weight: 600;
+}
+
+.ratings{
+  padding: 2px 8px;
+  border-radius: 200px;
+
+  color: rgb(214, 214, 51);
+  font-weight: 600;
+}
+
+.itemName {
+  background: linear-gradient(90deg, #bc46ef 0%, #049faa 50%, #786e12 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(221, 20, 20, 0.28), 0 1px 0 rgba(0,0,0,0.12);
+}
+
+.category-title {
+  background: linear-gradient(100deg, #871fb8 40%, #62a905 48%, #9ca70a 52%, #ff00c8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}

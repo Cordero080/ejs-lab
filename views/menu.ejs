@@ -9,29 +9,29 @@
   </head>
   <body class="menu">
     <%- include('./partials/nav') %>
-    <h1>Full Menu</h1>
+    <h1 class="full-menu">Full Menu</h1>
 
 
-    <h2>Mains</h2>
+    <h2 class="mains">Mains</h2>
     <% menuItems.forEach(item => { if(item.category === 'mains') {
     %>
-    <p><strong><%= item.name %><%= item.rating === 5 ? ' ⭐️' : '' %></strong>
-    - <%= item.priceFormatted %>
+    <p><strong class="item-name"><%= item.name %><%= item.rating === 5 ? ' ⭐️' : '' %></strong>
+    - <span class="price"><%= item.priceFormatted %></span>
   </p>
     <% } }) %>
 
-    <h2>Desserts</h2>
+    <h2 class="desserts">Desserts</h2>
     <% menuItems.forEach(item =>{ if (item.category === 'desserts') {%>
       <p>
-        <strong><%= item.name %><%= item.rating === 5 ? ' ⭐️' : '' %></strong>
-        - <%= item.priceFormatted %>
+        <strong class="item-name"><%= item.name %><%= item.rating === 5 ? ' ⭐️' : '' %></strong>
+        - <span class="price"> <%= item.priceFormatted %></p></span>
       </p>
    <% } }) %>
 
-    <h2>Sides</h2>
+    <h2 class="sides">Sides</h2>
     <% menuItems.forEach(item =>{ %> <% if(item.category === 'sides') { %>
-    <p><strong><%= item.name %><%= item.rating === 5 ? ' ⭐️' : '' %></strong>
-    - <%= item.priceFormatted %>
+    <p><strong class="item-name"><%= item.name %><%= item.rating === 5 ? ' ⭐️' : '' %></strong>
+    - <span class="price"> <%= item.priceFormatted %></span>
     </p>
 
     <% } %> <% }) %>
