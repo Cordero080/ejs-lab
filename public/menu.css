@@ -120,3 +120,43 @@ h1 {
   letter-spacing: 0.04em;
   text-shadow: 0 2px 8px rgba(0,0,0,0.18);
 }
+
+.rating {
+  color: rgb(207, 207, 29);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  body {
+    font-size: 1em;
+    padding: 0 0.5em;
+  }
+  nav {
+    padding: 0.7em 0;
+    font-size: 0.95em;
+  }
+  h1, .full-menu {
+    font-size: 1.3em;
+    margin-top: 2.5em;
+  }
+  .item-name, .mains, .desserts, .sides {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 2.2em;
+    padding: 0 4em;
+  }
+  nav {
+    font-size: 1.2em;
+    padding: 1.5em 0;
+  }
+  h1, .full-menu {
+    font-size: 2.8em;
+    margin-top: 3.5em;
+  }
+  .item-name, .mains, .desserts, .sides {
+    font-size: 1.5em;
+  }
+}

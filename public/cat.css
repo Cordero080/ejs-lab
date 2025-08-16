@@ -84,3 +84,31 @@ nav {
   letter-spacing: 0.04em;
   text-shadow: 0 2px 8px rgba(0,0,0,0.18);
 }
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  body {
+    font-size: 1em;
+    padding: 0 0.5em;
+  }
+  nav {
+    padding: 0.7em 0;
+    font-size: 0.95em;
+  }
+  .category-title, .category, .itemName {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 2.2em;
+    padding: 0 4em;
+  }
+  nav {
+    font-size: 1.2em;
+    padding: 1.5em 0;
+  }
+  .category-title, .category, .itemName {
+    font-size: 1.7em;
+  }
+}

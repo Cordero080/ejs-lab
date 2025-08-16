@@ -36,6 +36,62 @@ h1{
   } 
   }
 
+/* Responsive adjustments for very small and large devices */
+@media (max-width: 375px) {
+  html {
+    font-size: 80%;
+  }
+  body {
+    padding: 4px;
+    font-size: 0.85em;
+  }
+  nav {
+    padding: 0.5em 0;
+    font-size: 0.85em;
+    gap: 20px;
+  }
+  h1 {
+    font-size: 1.1em;
+    margin-top: 5em;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 90%;
+  }
+  body {
+    padding: 8px;
+    font-size: 1em;
+  }
+  nav {
+    padding: 0.7em 0;
+    font-size: 0.95em;
+    gap: 40px;
+  }
+  h1 {
+    font-size: 1.2em;
+    margin-top: 6em;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 110%;
+  }
+  body {
+    padding: 48px;
+    font-size: 1.3em;
+  }
+  nav {
+    font-size: 1.2em;
+    padding: 1.5em 0;
+    gap: 120px;
+  }
+  h1 {
+    font-size: 2em;
+    margin-top: 7em;
+  }
+}
+
 nav {
   width: 100%;
   position: fixed;
