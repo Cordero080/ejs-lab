@@ -22,14 +22,12 @@ font-style: normal;
 body {
   font-family: 'Future Z Italic', sans-serif;
   /* Green radial gradient background image */
-  background: radial-gradient(circle at 50% 50%, #39ff14 0%, #0a3c0a 100%);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: radial-gradient(circle at 50% 50%, #14ffb8 0%, #0a3c0a 100%);
   background-attachment: fixed;
   text-align: center;
   font-size: 1.8em;
   min-height: 100vh;
-  margin-bottom: 0;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,23 +48,15 @@ body::after {
   clip-path: polygon(0 0, 100% 0, 100% 20%, 0 100%);
 }
 
-h1 {
-  margin-top: 6em;
-}
 
-@media (max-width: 600px) {
-  h1 {
-    margin-top: 7.5em;
-  }
-}
+
 .full-menu {
   color: #b347a6;
-  
-  background: linear-gradient(90deg, #04ac74 0%, #ff00c8 40%, #00fff7 60%, #eaff00 100%);
+  background: linear-gradient(90deg, #028b5d 0%, #ff00c8 40%, #00fff7 60%, #eaff00 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 20px;
+  margin-top: 3.5em;
+  text-shadow: 0 10px 8px rgba(0, 0, 0, 0.289), 0 5px 0 rgba(0, 0, 0, 0.10);
 }
 
 .item-name {
@@ -74,15 +64,18 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  -webkit-text-fill-color: transparent;
-  font-weight: 700;
+ 
+-webkit-text-fill-color: transparent;
+  font-weight: 400;
   text-shadow: 0 2px 6px rgba(221, 20, 20, 0.28), 0 1px 0 rgba(0,0,0,0.12);
 }
-
+.item-details {
+  font-size: .6em;
+}
 .price {
   padding: 2px 8px;
   border-radius: 200px;
-  
+  font-size: .8em;
   color: rgb(227, 46, 100);
   font-weight: 600;
 }
@@ -125,38 +118,3 @@ h1 {
   color: rgb(207, 207, 29);
 }
 
-/* Responsive adjustments */
-@media (max-width: 600px) {
-  body {
-    font-size: 1em;
-    padding: 0 0.5em;
-  }
-  nav {
-    padding: 0.7em 0;
-    font-size: 0.95em;
-  }
-  h1, .full-menu {
-    font-size: 1.3em;
-    margin-top: 2.5em;
-  }
-  .item-name, .mains, .desserts, .sides {
-    font-size: 1em;
-  }
-}
-@media (min-width: 1200px) {
-  body {
-    font-size: 2.2em;
-    padding: 0 4em;
-  }
-  nav {
-    font-size: 1.2em;
-    padding: 1.5em 0;
-  }
-  h1, .full-menu {
-    font-size: 2.8em;
-    margin-top: 3.5em;
-  }
-  .item-name, .mains, .desserts, .sides {
-    font-size: 1.5em;
-  }
-}

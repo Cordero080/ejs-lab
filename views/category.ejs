@@ -6,8 +6,9 @@
     <% const capCategory = category.charAt(0).toUpperCase() + category.slice(1);
     %>
     <title><%= restaurant.name %> - <%= capCategory %></title>
-    <link rel="stylesheet" href="/cat.css" />
      <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/cat.css" />
+     
   </head>
   <body class="category">
     <!-- nav  partial -->
@@ -17,10 +18,10 @@
 
     <% if (menuItems.length >0) { %> <% menuItems.forEach(item => { %>
     <p>
-      <strong class="itemName"><%= item.name %></strong>
+      <strong class="item-name"><%= item.name %></strong>
       - <span class="price"><%= item.priceFormatted %></span> - ⭐️ <span class ="ratings"><%= item.rating %>/5 </span>
       <br />
-      <em><%= item.details %></em>
+      <em class="item-details"><%= item.details %></em>
     </p>
     <% }) %> <% } else { %>
     <p>No items found in this category.<a href="/menu"> Back to menu</a></p>

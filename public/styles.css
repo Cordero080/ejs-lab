@@ -4,7 +4,9 @@
   font-weight: normal;
 font-style: normal;
 }
-
+:root { --nav-h: 72px; }                    /* 1 row height (desktop) */
+@media (max-width: 900px) { :root { --nav-h: 104px; } }  /* likely 2 rows */
+@media (max-width: 600px) { :root { --nav-h: 128px; } }  /* tighter phones */
 
 *{
   box-sizing: border-box;
@@ -17,11 +19,11 @@ html {
 body {
   margin: 0;
   font-family: 'Future Z Italic';
-  line-height: 1.5;
+  line-height: 1;
   padding: 16px;
 }
 h1{
-  font-size: clamp(1.25rem, 1,2vw + .9rem, 1.5rem);
+  font-size: clamp(1.4rem, 2.2vw + .8rem, rem);
 }
 /* TABLETS */
 @media (min-width: 768px) {
@@ -46,9 +48,8 @@ h1{
     font-size: 0.85em;
   }
   nav {
-    padding: 0.5em 0;
-    font-size: 0.85em;
-    gap: 20px;
+    padding: 1em ;
+    font-size: 1em;
   }
   h1 {
     font-size: 1.1em;
@@ -64,8 +65,8 @@ h1{
     font-size: 1em;
   }
   nav {
-    padding: 0.7em 0;
-    font-size: 0.95em;
+    padding: 0.5em 0;
+    font-size: 0.2em;
     gap: 40px;
   }
   h1 {
@@ -82,9 +83,8 @@ h1{
     font-size: 1.3em;
   }
   nav {
-    font-size: 1.2em;
-    padding: 1.5em 0;
-    gap: 120px;
+    font-size: 0.6em;
+    padding: 0.6em 0;
   }
   h1 {
     font-size: 2em;
@@ -101,11 +101,13 @@ nav {
   flex-wrap: wrap;
   top: 0;
   left: 0;
-  z-index: 1000;
+  width: 100%;
+  z-index: 100;
   background: rgba(221, 210, 91, 0.85);
   box-shadow: 0 2px 8px rgba(0,0,0,0.07);
   text-align: center;
-  padding: 1em 0;
+  padding: .5em 0;
+  min-height: 1px; /* gives nav a floor */
 }
 
 body::before {

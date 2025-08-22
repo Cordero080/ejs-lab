@@ -22,7 +22,7 @@ font-style: normal;
 body {
   font-family: 'Future Z Italic', sans-serif;
   /* Green radial gradient background image */
-  background: radial-gradient(circle at 50% 50%, #39ff14 0%, #0a3c0a 100%);
+  background: radial-gradient(circle at 50% 50%,  #14ffb8 0%, #0a3c0a 100%);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -37,17 +37,7 @@ body {
   align-items: center;
 }
 
-nav {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  background: rgba(255,255,255,0.85);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-  text-align: center;
-  padding: 1em 0;
-}
+
 .price {
   padding: 2px 8px;
   border-radius: 200px;
@@ -64,7 +54,7 @@ nav {
   font-weight: 600;
 }
 
-.itemName {
+.item-name {
   background: linear-gradient(90deg, #bc46ef 0%, #049faa 50%, #786e12 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -73,42 +63,16 @@ nav {
   font-weight: 700;
   text-shadow: 0 2px 6px rgba(221, 20, 20, 0.28), 0 1px 0 rgba(0,0,0,0.12);
 }
+.item-details {
+  font-size: 0.6em;
+}
 
 .category-title {
-  background: linear-gradient(100deg, #871fb8 40%, #62a905 48%, #9ca70a 52%, #ff00c8 100%);
-  background-clip: text;
+color: #b347a6;
+  background: linear-gradient(90deg, #028b5d 0%, #ff00c8 40%, #00fff7 60%, #eaff00 100%);
   -webkit-background-clip: text;
-  color: transparent;
   -webkit-text-fill-color: transparent;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+ margin-top: 3.5em;
+  text-shadow: 0 10px 8px rgba(0, 0, 0, 0.289), 0 5px 0 rgba(0, 0, 0, 0.10);
 }
 
-/* Responsive adjustments */
-@media (max-width: 600px) {
-  body {
-    font-size: 1em;
-    padding: 0 0.5em;
-  }
-  nav {
-    padding: 0.7em 0;
-    font-size: 0.95em;
-  }
-  .category-title, .category, .itemName {
-    font-size: 1em;
-  }
-}
-@media (min-width: 1200px) {
-  body {
-    font-size: 2.2em;
-    padding: 0 4em;
-  }
-  nav {
-    font-size: 1.2em;
-    padding: 1.5em 0;
-  }
-  .category-title, .category, .itemName {
-    font-size: 1.7em;
-  }
-}
